@@ -48,7 +48,7 @@ const SignIn = () => {
       <Container>
         <FormWrap>
           <Icon to="/">
-            Tassaaan<span style={{ color: "Red" }}>C</span>o
+            Tassan<span style={{ color: "Red" }}>C</span>o
           </Icon>
           <FormCotent>
           <Form action="#" onSubmit={onSubmit}>
