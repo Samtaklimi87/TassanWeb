@@ -3,7 +3,7 @@ import Sidebar from "../Sidebar";
 import Navbar from "../Navbar";
 import Footer from "../Footer";
 import InfoSection from "../InfoSection";
-import { HomeObjTwo } from "../InfoSection/Data";
+import { HomeObjFive } from "../InfoSection/Data";
 import ScrollToTop from "../ScrollToTop";
 import LaminatPage from "../InfoSection/indexLaminat";
 
@@ -18,7 +18,7 @@ const Laminat = () => {
       <ScrollToTop />
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Navbar toggle={toggle} />
-      <LaminatPage {...HomeObjTwo} />
+      <LaminatPage {...HomeObjFive} />
       <Footer />
     </>
   );

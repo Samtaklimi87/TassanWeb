@@ -2,8 +2,8 @@ import img1 from "../../images/building_block.svg";
 import img2 from "../../images/wash_hands.svg";
 import img3 from "../../images/under_construction.svg";
 import img4 from "../../images/For_sale.svg";
-import img5 from "../../images/svg-5.svg";
-import img6 from "../../images/svg-6.svg";
+import img5 from "../../images/lam1.jpg";
+import img6 from "../../images/lam2.jpg";
 
 export const HomeObjOne = {
   imgReSize: false,
@@ -82,6 +82,27 @@ export const HomeObjTwo = {
     imgStart: true,
     img: img2,
     alt: "TassanVro's",
+    dark: false,
+    primary: false,
+    darkText: true,
+  };
+
+  export const HomeObjFive = {
+    imgReSize: true,
+    id: "id5",
+    goto: "/laminat",
+    lightBg: false,
+    lightText: false,
+    lightTextDecs: false,
+    topLine: "Why Laminats",
+    headLine: "Top Quality and long term Garanty ",
+    decsription:
+      "It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    buttonLabel: "Learn More",
+    imgStart: true,
+    img: img5,
+    img2:img6,
+    alt: "TassanBro's",
     dark: false,
     primary: false,
     darkText: true,

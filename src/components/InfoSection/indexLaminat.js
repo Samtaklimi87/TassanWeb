@@ -13,6 +13,7 @@ import {
   Subtitle,
   BtnWrap,
   Img,
+
 } from "./InfoElements";
 
 const LaminatPage = ({
@@ -32,6 +33,7 @@ const LaminatPage = ({
   dark2,
   goto,
   imgReSize,
+  img2
 }) => {
   return (
     <>
@@ -49,7 +51,7 @@ const LaminatPage = ({
             <Column1>
             <TopLine>after</TopLine>
               <ImgWrap imgReSize={imgReSize}>
-                <Img src={img} alt={alt} />
+                <Img src={img2} alt={alt} />
               </ImgWrap>
             </Column1>
           </InfoRow>
