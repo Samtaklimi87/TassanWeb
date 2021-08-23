@@ -76,7 +76,7 @@ export const Heading = styled.h1`
   line-height: 1.1;
   font-weight: 600;
 
-  @media screen and (mex-width: 480px) {
+  @media screen and (max-width: 480px) {
     font-size: 32px;
   }
 `;
@@ -98,6 +98,11 @@ export const BtnWrap = styled.div`
 export const ImgWrap = styled.div`
   max-width: 555px;
   height: 100%;
+
+  @media screen and (max-width: 780px) {
+    max-width: ${({ imgReSize }) => (imgReSize ? "300px" : "555px")};
+  }
+ 
 `;
 
 export const Img = styled.img`

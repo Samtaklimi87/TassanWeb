@@ -6,6 +6,7 @@ import img5 from "../../images/svg-5.svg";
 import img6 from "../../images/svg-6.svg";
 
 export const HomeObjOne = {
+  imgReSize: false,
   id: "about",
   goto: "/tegels",
   lightBg: true,
@@ -26,6 +27,7 @@ export const HomeObjOne = {
 
 
 export const HomeObjTwo = {
+  imgReSize: false,
     id: "discover",
     goto: "/laminat",
     lightBg: false,
@@ -45,6 +47,7 @@ export const HomeObjTwo = {
   };
   
   export const HomeObjThree = {
+    imgReSize: false,
     id: "signup",
     goto: "/schilderen",
     lightBg: true,
@@ -65,6 +68,7 @@ export const HomeObjTwo = {
   
 
   export const HomeObjFour = {
+    imgReSize: true,
     id: "id4",
     goto: "/gallery",
     lightBg: false,

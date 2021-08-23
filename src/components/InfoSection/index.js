@@ -30,7 +30,8 @@ const InfoSection = ({
   primary,
   dark,
   dark2,
-  goto
+  goto,
+  imgReSize
 }) => {
   return (
     <>
@@ -60,7 +61,7 @@ const InfoSection = ({
               </TextWrapper>
             </Column1>
             <Column2>
-              <ImgWrap>
+              <ImgWrap imgReSize={imgReSize}>
                 <Img src={img} alt={alt} />
               </ImgWrap>
             </Column2>

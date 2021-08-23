@@ -5,6 +5,7 @@ import Footer from "../Footer";
 import InfoSection from "../InfoSection";
 import { HomeObjTwo } from "../InfoSection/Data";
 import ScrollToTop from "../ScrollToTop";
+import LaminatPage from "../InfoSection/indexLaminat";
 
 const Laminat = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,7 +18,7 @@ const Laminat = () => {
       <ScrollToTop />
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Navbar toggle={toggle} />
-      <InfoSection {...HomeObjTwo} />
+      <LaminatPage {...HomeObjTwo} />
       <Footer />
     </>
   );
