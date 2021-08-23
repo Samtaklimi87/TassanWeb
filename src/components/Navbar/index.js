@@ -10,6 +10,7 @@ import {
   NavLinks,
   NavBtn,
   NavBtnLink,
+  NavLinkR
 } from "./NavbarElements";
 
 import { IconContext } from "react-icons/lib";
@@ -44,16 +45,16 @@ const Navbar = ({ toggle }) => {
             </MobileIcon>
             <NavMenu>
               <NavItem>
-                <NavLinks to="about">About</NavLinks>
+                <NavLinkR to="/laminat">Laminat</NavLinkR>
               </NavItem>
               <NavItem>
-                <NavLinks to="discover">Discover</NavLinks>
+                <NavLinkR to="/schilderen">Schilderen</NavLinkR>
               </NavItem>
               <NavItem>
-                <NavLinks to="services">Servises</NavLinks>
+                <NavLinkR to="/tegels">Tegels</NavLinkR>
               </NavItem>
               <NavItem>
-                <NavLinks to="signup">Sign Up</NavLinks>
+                <NavLinkR to="/gallery">Gallery</NavLinkR>
               </NavItem>
             </NavMenu>
             <NavBtn>

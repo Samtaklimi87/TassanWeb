@@ -7,6 +7,7 @@ import Navbar from './components/Navbar';
 import Laminat from './components/pages/Laminat';
 import Schilderen from './components/pages/Schilderen';
 import Tegels from './components/pages/Tegels';
+import Gallery from './components/pages/Gallery';
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
         <Route path="/laminat" component={Laminat} />
         <Route path="/schilderen" component={Schilderen} />
         <Route path="/tegels" component={Tegels} />
+        <Route path="/gallery" component={Gallery} />
       </Switch>
     </Router>
   );

@@ -7,6 +7,7 @@ import img6 from "../../images/svg-6.svg";
 
 export const HomeObjOne = {
   id: "about",
+  goto: "/tegels",
   lightBg: true,
   lightText: true,
   lightTextDecs: true,
@@ -26,6 +27,7 @@ export const HomeObjOne = {
 
 export const HomeObjTwo = {
     id: "discover",
+    goto: "/laminat",
     lightBg: false,
     lightText: false,
     lightTextDecs: false,
@@ -44,6 +46,7 @@ export const HomeObjTwo = {
   
   export const HomeObjThree = {
     id: "signup",
+    goto: "/tegels",
     lightBg: true,
     lightText: true,
     lightTextDecs: true,
@@ -63,6 +66,7 @@ export const HomeObjTwo = {
 
   export const HomeObjFour = {
     id: "id4",
+    goto: "/tegels",
     lightBg: false,
     lightText: false,
     lightTextDecs: false,
