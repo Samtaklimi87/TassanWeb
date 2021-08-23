@@ -31,8 +31,8 @@ export const HomeObjTwo = {
     lightBg: false,
     lightText: false,
     lightTextDecs: false,
-    topTitle: "Why Us",
-    title: "Top Quality and long term Garanty ",
+    topLine: "lamint is here ",
+    headLine: "Top Quality and long term Garanty ",
     decsription:
       "It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
     buttonLabel: "Learn More",
@@ -46,12 +46,12 @@ export const HomeObjTwo = {
   
   export const HomeObjThree = {
     id: "signup",
-    goto: "/tegels",
+    goto: "/schilderen",
     lightBg: true,
     lightText: true,
     lightTextDecs: true,
-    topTitle: "Get In Touch",
-    title: "Contact us we cant wait to hear from you.",
+    topLine: "Get In Touch",
+    headLine: "Contact us we cant wait to hear from you.",
     decsription:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. ",
     buttonLabel: "Contact Us",
@@ -66,12 +66,12 @@ export const HomeObjTwo = {
 
   export const HomeObjFour = {
     id: "id4",
-    goto: "/tegels",
+    goto: "/gallery",
     lightBg: false,
     lightText: false,
     lightTextDecs: false,
-    topTitle: "Why Us",
-    title: "Top Quality and long term Garanty ",
+    topLine: "Why Us",
+    headLine: "Top Quality and long term Garanty ",
     decsription:
       "It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
     buttonLabel: "Learn More",

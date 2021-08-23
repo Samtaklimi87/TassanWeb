@@ -36,7 +36,7 @@ const Navbar = ({ toggle }) => {
 
   return (
     <>
-      <IconContext.Provider value={{ color: "orange" }}>
+      <IconContext.Provider value={{ color: "darkred" }}>
         <Nav scrollNav={scrollNav}>
           <NavbarContainer>
             <NavLogo to="/">Tassan Brothers</NavLogo>
@@ -58,7 +58,7 @@ const Navbar = ({ toggle }) => {
               </NavItem>
             </NavMenu>
             <NavBtn>
-              <NavBtnLink to="/signin">Sign In</NavBtnLink>
+              <NavBtnLink to="/contact">Contact Us</NavBtnLink>
             </NavBtn>
           </NavbarContainer>
         </Nav>

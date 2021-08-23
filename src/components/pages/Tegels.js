@@ -1,13 +1,27 @@
-import React from 'react'
-import ScrollToTop from '../ScrollToTop'
+import React, { useState } from "react";
+import Sidebar from "../Sidebar";
+import Navbar from "../Navbar";
+import Services from "../Services";
+import Footer from "../Footer";
+import InfoSection from "../InfoSection";
+import { HomeObjFour } from "../InfoSection/Data";
+import ScrollToTop from "../ScrollToTop";
 
 const Tegels = () => {
-    return (
-        <div>
-        <h1>Welcome to tegeles  page </h1>
-        <ScrollToTop />
-    </div>
-    )
-}
+  const [isOpen, setIsOpen] = useState(false);
 
-export default Tegels
+  const toggle = () => {
+    setIsOpen(!isOpen);
+  };
+  return (
+    <>
+      <ScrollToTop />
+      <Sidebar isOpen={isOpen} toggle={toggle} />
+      <Navbar toggle={toggle} />
+      <InfoSection {...HomeObjFour} />
+      <Footer />
+    </>
+  );
+};
+
+export default Tegels;

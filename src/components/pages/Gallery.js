@@ -1,11 +1,26 @@
-import React from 'react'
+import React, { useState } from "react";
+import Sidebar from "../Sidebar";
+import Navbar from "../Navbar";
+import Footer from "../Footer";
+import InfoSection from "../InfoSection";
+import ScrollToTop from "../ScrollToTop";
+import { HomeObjOne } from "../InfoSection/Data";
 
 const Gallery = () => {
-    return (
-        <div>
-            <h1>Welcome to Gallery page </h1>
-        </div>
-    )
-}
+  const [isOpen, setIsOpen] = useState(false);
 
-export default Gallery
+  const toggle = () => {
+    setIsOpen(!isOpen);
+  };
+  return (
+    <>
+      <ScrollToTop />
+      <Sidebar isOpen={isOpen} toggle={toggle} />
+      <Navbar toggle={toggle} />
+      <InfoSection {...HomeObjOne} />
+      <Footer />
+    </>
+  );
+};
+
+export default Gallery;

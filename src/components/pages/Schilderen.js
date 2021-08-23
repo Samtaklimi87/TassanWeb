@@ -1,13 +1,25 @@
-import React from 'react'
-import ScrollToTop from '../ScrollToTop'
+import React, { useState } from "react";
+import Sidebar from "../Sidebar";
+import Navbar from "../Navbar";
+import Footer from "../Footer";
+import InfoSection from "../InfoSection";
+import { HomeObjThree } from "../InfoSection/Data";
+import ScrollToTop from "../ScrollToTop";
 
 const Schilderen = () => {
-    return (
-        <div>
-            <h1>Welcome to schilderen  page </h1>
-            <ScrollToTop />
-        </div>
-    )
-}
+  const [isOpen, setIsOpen] = useState(false);
 
-export default Schilderen
+  const toggle = () => {
+    setIsOpen(!isOpen);
+  };
+  return (
+    <>
+      <ScrollToTop />
+      <Sidebar isOpen={isOpen} toggle={toggle} />
+      <Navbar toggle={toggle} />
+      <InfoSection {...HomeObjThree} />
+      <Footer />
+    </>
+  );
+};
+export default Schilderen;

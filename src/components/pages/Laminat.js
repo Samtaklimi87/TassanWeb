@@ -1,14 +1,25 @@
-import React from 'react'
+import React, { useState } from "react";
+import Sidebar from "../Sidebar";
+import Navbar from "../Navbar";
+import Footer from "../Footer";
+import InfoSection from "../InfoSection";
+import { HomeObjTwo } from "../InfoSection/Data";
 import ScrollToTop from "../ScrollToTop";
 
-
 const Laminat = () => {
-    return (
-        <div>
-            <h1>Welcome to lamite page </h1>
-            <ScrollToTop />
-        </div>
-    )
-}
+  const [isOpen, setIsOpen] = useState(false);
 
-export default Laminat
+  const toggle = () => {
+    setIsOpen(!isOpen);
+  };
+  return (
+    <>
+      <ScrollToTop />
+      <Sidebar isOpen={isOpen} toggle={toggle} />
+      <Navbar toggle={toggle} />
+      <InfoSection {...HomeObjTwo} />
+      <Footer />
+    </>
+  );
+};
+export default Laminat;
