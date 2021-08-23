@@ -1,7 +1,7 @@
 import React ,{useState} from "react";
 import { HeroContainer, HeroBg, VideoBg ,HeroContent, HeroH1, HeroP,HeroBtnWrapper,ArrowForward,ArrowRight} from "./HeroElements";
 import Video from "../../videos/painting roof.mp4";
-import { Button } from "../ButtonElements";
+import { ButtonR } from "../ButtonElements";
 
 const HeroSection = () => {
   const [hover, setHover] = useState(false);
@@ -26,15 +26,15 @@ const HeroSection = () => {
           courses,....
         </HeroP>
         <HeroBtnWrapper>
-          <Button
-            to="signup"
+          <ButtonR
+            to="/contact"
             onMouseEnter={onHover}
             onMouseLeave={onHover}
             primary="true"
             dark="true"
           >
             Contact Us {hover ? <ArrowForward /> : <ArrowRight />}
-          </Button>
+          </ButtonR>
         </HeroBtnWrapper>
       </HeroContent>
     </HeroContainer>
