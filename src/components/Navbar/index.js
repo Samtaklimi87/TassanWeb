@@ -10,7 +10,7 @@ import {
   NavLinks,
   NavBtn,
   NavBtnLink,
-  NavLinkR
+  NavLinkR,
 } from "./NavbarElements";
 
 import { IconContext } from "react-icons/lib";
@@ -45,20 +45,37 @@ const Navbar = ({ toggle }) => {
             </MobileIcon>
             <NavMenu>
               <NavItem>
-                <NavLinkR to="/laminat">Laminat</NavLinkR>
+                <NavLinkR
+                  to="/laminat"
+                  activeStyle={{
+                    borderBottom: "4px solid #706047",
+                    color: "darkred",
+                  }}
+                >
+                  Laminat
+                </NavLinkR>
               </NavItem>
               <NavItem>
-                <NavLinkR to="/schilderen">Schilderen</NavLinkR>
+                <NavLinkR to="/schilderen"  activeStyle={{
+                    borderBottom: "4px solid #706047",
+                    color: "darkred",
+                  }}>Schilderen</NavLinkR>
               </NavItem>
               <NavItem>
-                <NavLinkR to="/tegels">Tegels</NavLinkR>
+                <NavLinkR to="/tegels"  activeStyle={{
+                    borderBottom: "4px solid #706047",
+                    color: "darkred",
+                  }}>Tegels</NavLinkR>
               </NavItem>
               <NavItem>
-                <NavLinkR to="/gallery">Gallery</NavLinkR>
+                <NavLinkR to="/gallery"  activeStyle={{
+                    borderBottom: "4px solid #706047",
+                    color: "darkred",
+                  }}>Gallery</NavLinkR>
               </NavItem>
             </NavMenu>
             <NavBtn>
-              <NavBtnLink to="/contact">Contact Us</NavBtnLink>
+              <NavBtnLink to="/contact" >Contact Us</NavBtnLink>
             </NavBtn>
           </NavbarContainer>
         </Nav>

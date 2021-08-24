@@ -2,6 +2,8 @@ import styled from "styled-components";
 import { Link as LinkR } from "react-router-dom";
 import { Link as LinkS } from "react-scroll";
 import { FaBars } from "react-icons/fa";
+import { NavLink } from 'react-router-dom';
+
 
 export const Nav = styled.nav`
   background: ${({ scrollNav }) => (scrollNav ? "#c6eb34" : "orange")};
@@ -91,8 +93,8 @@ export const NavLinks = styled(LinkS)`
   }
 `;
 
-export const NavLinkR = styled(LinkR)`
-  color: #fff;
+export const NavLinkR = styled(NavLink)`
+  color: #506e61;
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -100,8 +102,12 @@ export const NavLinkR = styled(LinkR)`
   height: 100%;
   cursor: pointer;
 
-  &.active {
-    border-bottom: 10px solid #01bf71;
+  
+
+  
+  &:hover {
+    border-bottom: 4px solid #055c87;
+    // background: red;
   }
 `;
 
@@ -131,7 +137,7 @@ export const NavBtnLink = styled(LinkR)`
 
   &:hover {
     transition: all 0.2s ease-in-out;
-    background: #fff;
+    background: #f5dd73;
     color: #010606;
   }
 `;

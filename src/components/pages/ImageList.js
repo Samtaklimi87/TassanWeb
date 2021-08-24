@@ -79,7 +79,7 @@ export default function TitlebarImageList() {
                 >
                   <ButtonR
                     to={item.goto}
-                    smooth={true}
+                    // smooth={true}
                     duartion={500}
                     spy={true}
                     primary={item.primary ? 1 : 0}
