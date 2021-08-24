@@ -5,6 +5,7 @@ import Footer from "../Footer";
 import InfoSection from "../InfoSection";
 import ScrollToTop from "../ScrollToTop";
 import { HomeObjOne } from "../InfoSection/Data";
+import TitlebarImageList from "./ImageList";
 
 const Gallery = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,6 +18,7 @@ const Gallery = () => {
       <ScrollToTop />
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Navbar toggle={toggle} />
+      <TitlebarImageList />
       <InfoSection {...HomeObjOne} />
       <Footer />
     </>

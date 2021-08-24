@@ -1,19 +1,17 @@
-import './App.css';
+import "./App.css";
 import React from "react";
-import { BrowserRouter as Router, Switch,Route } from "react-router-dom";
-import Home from './components/pages';
-import SigninPage from './components/pages/SignIn';
-import Navbar from './components/Navbar';
-import Laminat from './components/pages/Laminat';
-import Schilderen from './components/pages/Schilderen';
-import Tegels from './components/pages/Tegels';
-import Gallery from './components/pages/Gallery';
-
-
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Home from "./components/pages";
+import SigninPage from "./components/pages/SignIn";
+import Navbar from "./components/Navbar";
+import Laminat from "./components/pages/Laminat";
+import Schilderen from "./components/pages/Schilderen";
+import Tegels from "./components/pages/Tegels";
+import Gallery from "./components/pages/Gallery";
+import Breakfast from "./components/pages/GalleryPages/Breakfast";
 function App() {
-
   return (
-    <Router >
+    <Router>
       <Switch>
         <Route path="/" exact component={Home} />
         {/* <Route path="/page1" component={Page1} /> */}
@@ -23,6 +21,7 @@ function App() {
         <Route path="/schilderen" component={Schilderen} />
         <Route path="/tegels" component={Tegels} />
         <Route path="/gallery" component={Gallery} />
+        <Route path="/breakfast" component={Breakfast} />
       </Switch>
     </Router>
   );
